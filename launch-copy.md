@@ -1,5 +1,25 @@
 # Launch copy for the Claude Code skills pack
 
+**Live assets (Aug 16, 2026):**
+- Repo: https://github.com/TyrannicAwe/claude-skills-pack (public, MIT)
+- Landing page: https://TyrannicAwe.github.io/claude-skills-pack/
+- One-line install: `bash <(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)`
+- TODO: replace `PASTE_PAYHIP_OR_GUMROAD_LINK_HERE` in index.html with the real checkout link
+
+## Market-validated positioning (500k.io data, May 2026)
+- Four founders made **$1,400–8,200 in month one** selling skills via Gumroad (Q1 2026).
+- Price tiers: $5–29 generic · **$49–199 workflow/methodology ← we are here** · $299–2,499 vertical expertise.
+- Generic productivity maxes ~$1K/mo; **premium needs premium proof** (before/after screenshots, ROI math).
+- Demo-first, not docs-first: show a live example of a dry-run gate; buyers want proof before persuasion.
+- What did NOT work: paid Twitter ads ($200–1,000 burnt), ProductHunt launch (burst, no retention), influencer partnerships.
+- Channel conversion: LinkedIn 1–3% · X 0.3–1% · Reddit 0.1–0.5% (volume) · cold outreach 5–20% (premium) · dev Discords/communities 3–10%.
+- Consider a $99 "workflow" tier later: the same 3 skills + a 1h setup call; keep the $29 volume tier.
+
+## Pricing decision (based on data)
+Keep $29 launch / $39 regular for now (volume lane, first 50 buyers).
+Raise to $49–79 after 10 sales + 3 testimonials with screenshots — the workflow lane is defensible here
+because these skills encode methodology, not generic prompts.
+
 ## Payhip / Gumroad listing
 
 **Title:** Claude Code Skills Pack — Git Safety, API Debugging, Test Triage
