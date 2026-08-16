@@ -5,6 +5,7 @@ All links:
 - Landing: https://TyrannicAwe.github.io/claude-skills-pack/
 - Install: `bash <(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)`
 - Buy: https://payhip.com/b/jNBWp
+- Crypto: BTC `1PWgH9xXegyMaagjNuN4RAMzj1jj4r43FY` · USDT-TRC20 `TR5n8tWzZCo2YuhWcpDQQYZcRPWB6a6CGg` ($29 exact; email txid to w6adams@gmail.com)
 
 ---
 
