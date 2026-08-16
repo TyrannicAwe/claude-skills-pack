@@ -25,8 +25,8 @@ real codebases. No fluff, no prompts — actual operational workflows.
 ## Install
 
 ```bash
-git clone <repo-url> && cd claude-skills-pack && bash install.sh
-# or: bash install.sh ~/.claude/skills
+bash <(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)
+# or clone the repo and: bash install.sh
 ```
 
 Then restart Claude Code. Invoke with:

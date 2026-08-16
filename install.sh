@@ -1,25 +1,30 @@
 #!/usr/bin/env bash
 # One-line installer for the Claude Code skills pack.
-# Usage: bash <(curl -s <PASTE_URL_AFTER_HOSTING>)  -- or run locally:
-#   bash install.sh ~/.claude/skills
-
+#   bash <(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)
+#   or locally: bash install.sh ~/.claude/skills
 set -euo pipefail
 
 TARGET="${1:-${HOME}/.claude/skills}"
-SRC="$(cd "$(dirname "$0")" && pwd)/skills"
+REPO_URL="https://github.com/TyrannicAwe/claude-skills-pack/archive/refs/heads/main.tar.gz"
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
 
-echo "Installing skills pack -> $TARGET"
+echo "Installing Claude Code Skills Pack -> $TARGET"
 mkdir -p "$TARGET"
-for skill in "$SRC"/*/; do
-    name="$(basename "$skill")"
-    cp -R "$skill" "$TARGET/$name"
-    echo "  installed: $name"
-done
+
+SRC="$(cd "$(dirname "$0")" 2>/dev/null && pwd)/skills"
+if [ -d "$SRC" ]; then
+    echo "Using local files ($SRC)"
+    cp -R "$SRC"/. "$TARGET"/
+else
+    echo "Downloading from $REPO_URL"
+    curl -fsSL "$REPO_URL" -o "$TMP/pack.tar.gz"
+    tar -xzf "$TMP/pack.tar.gz" -C "$TMP"
+    cp -R "$TMP"/claude-skills-pack-main/skills/. "$TARGET"/
+fi
 
 echo
-echo "Done. Verify with:"
-echo "  ls $TARGET"
-echo "Then in Claude Code, invoke: /git-surgery, /api-debugger, /test-doctor"
+echo "Installed:"
+ls "$TARGET"
 echo
-echo "Note: Claude Code discovers skills from ~/.claude/skills on startup;"
-echo "restart the session if they don't show up immediately."
+echo "Restart Claude Code, then invoke: /git-surgery, /api-debugger, /test-doctor"

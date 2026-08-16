@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claude Code Skills Pack — Git Safety, API Debugging, Test Triage</title>
+<meta name="description" content="3 production-grade Claude Code skills: git-surgery, api-debugger, test-doctor. Stop AI agents from rewriting your history, guessing at bugs, and deleting failing tests.">
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --border:#30363d; --fg:#e6edf3; --muted:#8b949e; --acc:#58a6ff; --green:#3fb950; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px 80px; }
+  h1 { font-size:2rem; letter-spacing:-.02em; margin-bottom:8px; }
+  h2 { font-size:1.25rem; margin:40px 0 12px; }
+  .sub { color:var(--muted); font-size:1.05rem; margin-bottom:32px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-bottom:14px; }
+  .card h3 { font-size:1.05rem; margin-bottom:4px; }
+  .card .tag { color:var(--acc); font-size:.85rem; }
+  .card p { color:var(--muted); font-size:.95rem; }
+  .price { display:flex; align-items:baseline; gap:10px; margin:28px 0 8px; }
+  .price .now { font-size:2.2rem; font-weight:700; }
+  .price .was { color:var(--muted); text-decoration:line-through; font-size:1.1rem; }
+  .btn { display:inline-block; background:var(--green); color:#052e16; font-weight:700; padding:14px 28px; border-radius:8px; text-decoration:none; font-size:1.05rem; }
+  .btn:hover { filter:brightness(1.1); }
+  .note { color:var(--muted); font-size:.9rem; margin-top:8px; }
+  pre { background:#010409; border:1px solid var(--border); border-radius:8px; padding:14px 16px; overflow-x:auto; font-size:.85rem; }
+  code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+  ul { padding-left:20px; color:var(--muted); }
+  li { margin-bottom:6px; }
+  .fade { color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Claude Code Skills Pack</h1>
+  <p class="sub">3 production-grade skills that stop AI agents from wrecking your git history, guessing at API bugs, and "fixing" failing tests by deleting them.</p>
+
+  <div class="card">
+    <h3>git-surgery</h3>
+    <div class="tag">/git-surgery</div>
+    <p>Split, squash, rebase, cherry-pick, revert — with mandatory dry-run gates and a pre-rewrite safety checklist. An agent will never rewrite history without your explicit approval.</p>
+  </div>
+  <div class="card">
+    <h3>api-debugger</h3>
+    <div class="tag">/api-debugger</div>
+    <p>Reproduce the failure with curl, classify it into a 4xx/5xx/network taxonomy, isolate the failing layer, and verify the fix with evidence instead of guesses.</p>
+  </div>
+  <div class="card">
+    <h3>test-doctor</h3>
+    <div class="tag">/test-doctor</div>
+    <p>Classify assertion / error / timeout / flaky failures, find the true root cause, fix it, and prove it with a regression test.</p>
+  </div>
+
+  <div class="price">
+    <span class="now">$29</span>
+    <span class="was">$39</span>
+    <span class="fade">launch price · first 50 buyers</span>
+  </div>
+  <a class="btn" href="PASTE_PAYHIP_OR_GUMROAD_LINK_HERE">Buy the pack</a>
+  <p class="note">MIT licensed · 30-day money-back guarantee · written by an engineer who encoded the discipline</p>
+
+  <h2>What you get</h2>
+  <ul>
+    <li>3 original SKILL.md files — the official Claude Code skill format</li>
+    <li>One-line installer: <code>bash &lt;(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)</code></li>
+    <li>Free updates — new versions land in your repo and re-run the installer</li>
+    <li>Full source visible on GitHub before you buy (no hidden code)</li>
+  </ul>
+
+  <h2>Why it pays for itself</h2>
+  <ul>
+    <li>The first time an agent doesn't force-push over your branch — saved.</li>
+    <li>The first 500 that wasn't your app, debugged in 10 minutes instead of an hour — saved.</li>
+    <li>The first flaky test fixed at the root instead of disabled — saved.</li>
+  </ul>
+
+  <h2>Install</h2>
+  <pre>bash &lt;(curl -s https://raw.githubusercontent.com/TyrannicAwe/claude-skills-pack/main/install.sh)</pre>
+  <p class="fade">Installs to ~/.claude/skills. Restart Claude Code, then invoke /git-surgery, /api-debugger, /test-doctor.</p>
+
+  <h2>Source</h2>
+  <p class="fade"><a href="https://github.com/TyrannicAwe/claude-skills-pack" style="color:var(--acc)">github.com/TyrannicAwe/claude-skills-pack</a> — inspect everything before buying. Feedback and PRs welcome.</p>
+</div>
+</body>
+</html>
